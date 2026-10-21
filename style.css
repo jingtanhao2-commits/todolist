@@ -1,0 +1,68 @@
+body {
+    background: #f5f5f5;
+    font-family: "Microsoft YaHei", sans-serif;
+    text-align: center;
+    padding-top: 40px;
+}
+
+h1 {
+    color: #333;
+}
+
+/* 添加区 */
+.添加区 {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 260px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background: #4caf50;
+    color: white;
+    margin-left: 8px;
+}
+
+/* 列表容器 */
+#list {
+    list-style: none;   /* 去掉 <li> 默认的小圆点 */
+    padding: 0;
+    max-width: 420px;
+    margin: 0 auto;     /* 整体居中 */
+}
+
+/* 每一条待办 */
+#list li {
+    background: white;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* 完成状态：加一条删除线，颜色变灰。
+   这个 class 由 JS 用 classList.add("完成") 加上去 */
+#list li.完成 {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+/* 每条里的"删除"按钮 */
+#list li button {
+    float: right;
+    background: #e53935;
+    padding: 4px 12px;
+    font-size: 14px;
+}

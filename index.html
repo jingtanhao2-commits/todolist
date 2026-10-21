@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>我的待办清单</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>📝 待办清单</h1>
+
+    <!-- 添加区：一个输入框 + 一个"添加"按钮 -->
+    <div class="添加区">
+        <input id="todoInput" type="text" placeholder="输入要做的事，比如：写作业">
+        <button id="addBtn">添加</button>
+    </div>
+
+    <!-- 待办列表：JS 会往这个 <ul> 里动态塞 <li> -->
+    <ul id="list"></ul>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
